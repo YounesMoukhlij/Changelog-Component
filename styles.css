@@ -1,0 +1,137 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    padding: 30px;
+    margin: 10px;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    & .container
+    {
+        border: 3px solid rgb(0, 0, 0);
+
+        border-radius: 30px;
+        margin: 100px;
+        padding: 50px;
+
+        width: 600px;
+        height: 600px;
+
+        & .title
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            margin-bottom: 50px;
+
+            gap: 10px;
+
+            & h2
+            {
+                font-size: 40px;
+                font-weight: 100;
+            }
+            & p
+            {
+                font-weight: 100;
+                color: gray;
+            }
+        }
+
+        & .main-body
+        {
+            position: relative;
+            padding: 40px 20px;
+
+
+            & .log-item
+            {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 25px;
+
+                & .log-date
+                {
+                    flex: 1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    text-align: left;
+                    color: gray;
+                    font-size: 16px;
+                    font-weight: 400;
+
+                }
+
+                & .log-description
+                {
+                  flex: 2;
+                  padding-left: 30px;
+                  color: #1e293b;
+                  font-size: 18px;
+                  font-weight: 500;
+
+                }
+
+                & .log-dot
+                {
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 90%;
+                    position: relative;
+                    background-color: black;
+                    left: 0.4%;
+                }
+            }
+        }
+        & .main-body::before
+        {
+            content: '';
+            position: absolute;
+            left: 35%;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background-color: black;
+            transform: translateX(-50%);
+
+        }
+
+        & .footer
+        {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            & button
+            {
+                height: 40px;
+                width: 200px;
+                background-color: black;
+                border-radius: 10px;
+                cursor: pointer;
+                & p
+                {
+                    color: white;
+                    font-size: 15px;
+                    font-weight: 100;
+                }
+            }
+        }
+    }
+}
