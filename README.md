@@ -2,6 +2,10 @@
 
 A beautiful and responsive changelog component built with HTML and CSS. This component displays project updates, releases, and announcements in an elegant timeline format.
 
+<div align="center">
+
+[✅ Back to Web Roadmap Projects ✅](https://github.com/YounesMoukhlij/web-roadmap-projects)
+</div>
 **Project Source**: [Roadmap.sh Changelog Component Project](https://roadmap.sh/projects/changelog-component)
 
 ## 🌟 Features
